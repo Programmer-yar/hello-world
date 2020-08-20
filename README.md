@@ -1,4 +1,2 @@
-# hello-world
-Just checking stuff
-
-Making changes in hello world project after making a branch readme edits.
+# HTML and CSS
+Covers the basics and intermediate level for HTML and CSS
