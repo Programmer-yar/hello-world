@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head> <!--<head> Contains content not shown to visitors-->
+<meta charset="utf-8"> <!-- sets character type-->
+<meta name="viewport" content="width=device-width, initial scale=1.0">
+<!--CSS Styling done here-->
+<!--width specifies the container width in which the element must reside-->
+<style>
+	*{
+		box-sizing: border-box;
+	}
+
+	.row::after {
+    content: "";
+    clear: both;
+    display: table;
+                }
+
+	[class*="col-"]
+	{
+  float: left;
+  padding: 15px;
+    }
+
+ @media only screen and (max-width: 400px;)
+	/* For mobile phones: */
+	[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 400px) {
+  /* this will cover screens above 400px and below 750px */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 750px) {
+  /* width above 750px */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+    header img {padding-top: 100px; float:left; margin-left: 20px; width: auto; height:500px; }
+	#page-color {background-color: lightblue; }
+	#main-head {color: brown; background-color: yellow;  font-size: 50px; text-align: center; text-decoration: underline; font-weight: 900; padding-bottom: 30px; border-left: 20px solid brown; /*border-right: 20px solid brown;*/}
+    #special{background-color: teal; color: white; font-size: 35px; font-family: cursive; text-align: center; padding-left: 10px; border-radius: 50px;}
+    header section div p{ font-size: 25px; }
+	.h2set{color: blue; font-size: 30px; padding-bottom: 20px; text-decoration: underline;}
+	.h3set{color: white; font-size: 35px; padding-bottom: 10px; text-decoration: underline; text-align: center;}
+	p{font-size: 35px; padding-left: 20px; margin-left: 20px;}
+	.ol-set { list-style-type: upper-roman; color: white; background-color: darkblue; font-size: 30px; padding: 20px;
+		padding-left: 50px; border-radius: 10px;}
+	ol li{margin: 5px;  background-color: lightblue; text-align: left; border-radius: 5px;}
+	.ul-set{list-style-image:url(https://imgur.com/Lk2rcag.jpg); color: darkgreen; background-color: orange; font-size: 30px;  padding:20px 50px; border-radius: 10px; }
+	ul li{margin: 5px; background-color: lightyellow; border-radius: 5px; }
+	
+	.distinct{ font-style: italic; font-weight: bold; }
+	.chefo{ font-style: unset; color: red; }
+	#under{ text-decoration: underline; }
+	footer ol li{background-color: unset; color: unset; text-align: unset; font-size: 25px;}
+	
+
+  
+</style>
+<!--direct descendant way of accessing specific element or set of elements-->
+                       <!--section>div>h4-->
+                       
+<title>Classes and ID's</title>
+
+</head>
+
+<body id="page-color"> <!--contains content shown to visitors-->
+	<header>
+
+<!--Name of Recipe-->
+
+
+  <section class="row">
+	
+    <div class="col-7 col-s-8 ">
+    <h1 id="main-head">CHICKEN TIKKA RECIPE</h1>
+<h3 class="h2set">Description</h3>
+<p>
+This is a famous <span class="distinct chefo">barbeque</span> category food. This food is normally enjoyed
+at dinner.It is cooked specially over <span class="distinct">coal</span> stove. It is served and sold
+in units of siekh. Each siekh contains 4 chicken pieces.
+The good thing about this dish is that it is almost <span class="distinct" id="under">OilFree</span>, has
+a balanced spice combination, light and cheap.
+</p>
+    </div>
+   <div class="col-5 col-s-4">
+<img src="https://imgur.com/NPEft2l.jpg" alt="Tikka Pic" />
+    </div>
+
+   </section>
+  </header>
+
+  <main>
+  
+  <div>
+<h3 id="special">How to Prepare?</h3>
+<p>
+	Method for making this dish is provided below. Make sure to collect the required ingrediants in correct amount before starting. After that please follow the step by step procedure for marination and cooking. 
+</p>
+
+  </div>
+
+    <section class="row">
+    	<div class="col-6 col-s-6 ">
+    	
+    	
+
+<!--Items required (unordered list)-->
+<ul class="ul-set">
+	<h3 class="h3set">Ingrediants required</h3>
+<li>Chicken 2 kg</li>
+<li>Ginger 1 teaspoon</li>
+<li>Garlic 1 teaspoon</li>
+<li>Lemon juice 8 teaspoons</li>
+<li>Cooking Oil</li>
+<li>Food Color</li>
+<li>Tikka spice of any good company</li>
+</ul>
+        </div>
+        
+    <div class="col-6 col-s-6">  
+    
+
+<!--Making Procedure Step by Step (ordered list)-->
+<ol class="ol-set">
+	<h3 class="h3set">Step by Step Procedure</h3>
+<li> <strong>Cut Chicken pieces</strong> </li>
+<li>Add Ginger <img src="https://imgur.com/Lk2rcag.jpg"/></li>
+<li>Add Garlic</li>
+<li>Add Tikka Masala <img src="https://imgur.com/MNJtGGT.jpg"/></li>
+<li>Add food Color <img src="https://imgur.com/uHBSlLx.jpg"/></li>
+<li> <em>Leave it for 3 hours</em> <img src="https://imgur.com/1CAPTJ2.jpg"/></li>
+<li>Cook it either in grill, oven or pan <img src="https://imgur.com/m2kBaRh.jpg"/></li>
+</ol>
+
+   </div>
+   </section>
+
+
+ </main>
+
+ <br>
+ <br>
+ <hr>
+<footer>
+
+
+        </div>
+<h2 class="h2set"> For More Wonderful Recipes</h2>
+<ol>
+	<!--Using a tags in list-->
+	<li>  <a href="https://hamariweb.com/recipes/chicken_tikka_recipe_rid98.aspx">BoneLess Tikka</a>  </li>
+	<li><a href="https://www.chefdehome.com/recipes/11/chicken-tikka">Recipe from ChefHome</a></li>
+	<li><a href="https://kfoods.com/article/chicken-tikka-recipe_a123">Recipe from KFoods</a></li>
+	<li><a href="https://www.shanfoods.com/product/recipe-mixes/bbq/chicken-tikka/">Recipe from SHAN FOODS</a></li>
+	<li><a href="https://www.allrecipes.com/recipe/45736/chicken-tikka-masala/">Creamy Tikka</a></li>
+	<!--Using image as a link using a tag-->
+	<li>
+		<a href="https://kfoods.com/article/chicken-tikka-recipe_a123">
+			<img src="https://imgur.com/wGH13TE.jpg" alt="Tikka Image by KFoods">
+		</a>
+	</li>
+</ol>
+</footer>
+</body>
+</html>

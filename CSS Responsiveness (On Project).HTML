@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--<meta> tag defines info about data and is always used inside head-->
+<meta charset="utf-8">
+
+<!--Makes website look good on all devices-->
+<meta name="viewport" content="width=device-width">
+
+<!--define words for search engine-->
+<meta name="keyword" content="Magic of thinking Big, Dr. David Schwartz, Books for succes, self help book">
+<meta name="author" content="Ahmad">
+
+<!--Refreshes the page after every 30 seconds-->
+
+<!--meta http-equiv="refresh" content="30"-->
+
+<style>
+	body {background-color: lightyellow;}
+	header section div{margin-top: 20px;}
+	nav,footer section{ background-color: darkblue; height: 50px;width: 100%; padding-left:0; line-height: 50px;}
+	nav ul{list-style:none; display: flex;}
+	nav ul li{ margin:0 10px; background-color: lightblue ; font-size: 30px; }
+	header section{display: flex;}
+	header section{text-align: center; justify-content: center;}
+	
+	main article{color: darkblue; justify-content: space-between; display: flex; flex-flow: row wrap; margin: 0 20px;}
+	#blog-text{justify-content: left; width: 50%; margin: 0 30px; font-size: 25px; margin-right: 20px;}
+	#blog p:first-child {margin: 50px 0;}
+	.card{ background-color: powderblue; border-radius: 10px;padding-bottom: 5px; }
+	.card li{font-size: 20px;}
+</style>
+<!--flex box-->
+<!--media query-->
+<title>HTML PROJECT</title>
+</head>
+
+
+<body>
+	<!--Includes Above Page content-->
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#MoreBooks">Other Books</a></li>
+			<li><a href="#MostRead">Most Read</a></li>
+
+		</ul>
+	</nav>
+<header>
+
+	<section>
+
+	<div>
+<h2 id="main">          <!--Supporting headings-->
+	<em>My Favourite Book</em>
+</h2>                           
+
+<h1>           <!--Main Heading-->
+The Magic of thinking Big
+</h1>
+       
+<h3><em>By Dr. David Schwartz</em></h3>
+   </div>
+
+    <!--Supporting headings-->
+    <div>
+<img width="150" height="200" src="https://imgur.com/vojrlF1.jpg" alt="Book title image">
+    </div>
+   </section>
+
+<div>
+	<!--Introduction Paragraph-->
+	
+<p>
+	 <big>A wonderful <strong style="color: red">self help book</strong> which comprises the precious life lessons of Dr. David Schwartz.
+	In this book, the author shows how our <em>thinking effects our life</em>. Anyone can achieve their
+	dreams and life goals by <em>taking control of their thoughts.</em></big>
+<!--<br> tag introduces line break-->
+</p>
+</div>
+
+</header>
+<hr>
+<main>
+   <article>
+
+	<div id="blog-text">
+
+		<p>
+		This Book contains a Total of 13 Chapters. In the begining of the book, the author talks about the importance of thinking big. Logically proving the point that most people struggling through tough financial conditions have small life goals or none at all.Just by raising the standards of our thinking we can accomplish way more than we think we can. Once we believe that we can do something, the how to do it develops on its own.
+       </p>
+
+       <p>
+       	In the next chapters he talks about other components, which must be combined with big thinking to achieve
+       	anything a person wants. Those include thinking positive even in worst conditions, being honest, Taking action
+       	and adotpting leadership and decision making skills in order to enhance the effect of successful personality.
+       </p>
+
+	</div>
+
+<section>
+  <div id="chapters" class="card">
+  	
+       	<!--<big> makes the text bigger than usual-->
+       <h3>The 13 Chapters of this book are listed below:</h3> 
+       
+	<ol>
+		
+		<li><strong>Believe You can Succeed and you will</strong></li>
+		<li>Cure yourself of exquistis, The failure disease </li>
+		<li>Build Confidence and destroy fear</li>
+		<li>How to think big</li>
+		<li>How to think and dream creatively</li>
+		<li>You are what you think you are</li>
+		<li>Manage you environment Go first class</li>
+		<li>Make your atitude your allies</li>
+		<li>Think Right towards people</li>
+		<li>Get the action habbit</li>
+		<li>How to turn defeat into victory</li>
+		<li>Use Goals to help you grow</li>
+		<li>How to think like a leader</li>
+	</ol>
+	</div>
+  
+   <div id="quotes" class="card">
+
+	<h3>Some famous quote of this book are listed below:</h3>
+
+	<ul>
+		<li style="color: purple"><em>Life is too short to be little</em></li>
+		<li style="color: purple"><em>Motions produce emotions</em></li>
+		<li style="color: purple"><em>A wise man will be the master of his thoughts,<br> a fool will be its slave</em></li>
+		<li style="color: purple"><em>"Others see in us what we see in ourselves"</em></li>
+	</ul>
+
+  </div>
+
+</section>
+</article>
+</main>
+
+<hr>
+
+
+<footer>
+	<p>If you want to see a review of this book video is embeded below:</p>
+	<iframe width="420" height="345" src="https://www.youtube.com/embed/eSZFjtr4hdc">
+</iframe>
+
+	<fieldset>
+	<legend><p>User feedback</p></legend>
+	<div>
+	  <p>Do you like the book?</p>
+	  
+    </div>
+          <select>
+          	<option value="YES">YES</option>
+		   <option value="NO">NO</option>
+	   </select>
+    <div>
+
+	<p>If you do not like this book then choose from options below:</p>
+	 <form>
+	  <input type="radio" name="option" value="Who says you can't? You do">Who says you can't? You do<br>
+	  <input type="radio" name="option" value="The Power of habbit">The Power of habbit<br>
+	  <input type="radio" name="option" value="7 habbits of highly effective people">7 habbits of highly effective people<br><br>
+	  <input type="submit" name="submit">
+     </form>
+	</div>
+
+	</fieldset>
+
+   <section>
+   	<p>Page by AY</p>
+   </section>
+</footer>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Speificity</title>
+  <meta charset="utf-8"> <!-- sets character type-->
+  <meta name="viewport" content="width=device-width">
+
+  <style>
+  	#h1set{color: red; background-color: darkblue; width: 1350px; font-size: 70px; text-align: center;}
+  	
+  	#example p+p {background-color: blue;}
+  	#pic:hover {filter: invert(100%);}
+  	#hover-effect:hover{transform: scale(0.5);}
+  </style>
+ <!--Classes are more specific than general selectors-->
+ <!--class will over ride settings defined with general selectors-->
+ <!--IDs are even more specific (most specific type) than classes-->
+ <!--Search for attribute selectors and pseudo classes-->
+ <!--In terms of over-ride power id>class>general selector-->
+ <!--body header div {height: 300px; width: 500px; background-color: yellow;}-->
+ <!--.example-class{background-color: blue;}-->
+</head>
+<body>
+<header>
+	<h1 id="h1set">SPECIFICITY (ADVANCED CSS)</h1> 
+
+	<div id="example" class="example-class">
+		<p>This is a paragraph above h3</p>
+		<p>first para sibling</p>
+		<h3>I am an h3 below paragraph</h3>
+		<h2>This h2 is below h3</h2>
+		<p>This paragarph is actually below h3 :-)</p>
+		<p>A sibling paragraph</p>	
+		<p>another sibling</p>	
+	</div>
+
+	<div>
+
+	<h4>Description:</h4>
+	<p>This utorial is about learning advanced CSS particualarly SPECICITY. After that there is CSS Responsiveness. And then it will be the end of the course. If you want to learn more, its up to you. Lets dig in.</p>
+	<p>Know yourself. Once you know yourself then it will be easy to do anything.<br> Keep going.<br> Keep Evolving.<br> Keep performing.</p>
+	<p>You can read a lot of books look to one of them is given:
+    <img id="pic" src="https://imgur.com/vojrlF1.jpg" alt="Book title image">
+	<img id="hover-effect" src="https://imgur.com/NPEft2l.jpg" alt="Tikka Pic" />
+	</p>
+</div>
+</header>
+
+</body>
+</html>

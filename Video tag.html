@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video tag</title>
+</head>
+<body>
+
+<!--video tag only displays local videos-->
+<!--If not working in sublime text use text document to compile-->
+
+	<video src="An Act Of Faith.mp4" autoplay controls>
+  Your browser does not support the video tag.
+</video>
+<video src="The 3 ways to silence your ego- EGO IS THE ENEMY by Ryan Holiday.mp4"
+    controls autoplay loop
+      poster="https://imgur.com/vojrlF1.jpg">
+        
+      </video>
+
+<!--To fetch videos from other sites use iframe tag, video tag will only play local videos-->
+<!--it can fetch any portion of other website-->
+
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+
+<!--Using audio tag-->
+
+<audio src="An Act.mp3" controls>
+	
+</audio>
+
+<!--form tag connects the element with some form-->
+
+<form action="/action_page.php" target="_blank" method="get">
+	
+	<fieldset>             <!--encloses the field with main heading covered by <legend>-->
+
+
+    <legend>Personal Information:</legend>   <!--Makes heading of box enclosed by <fieldset>-->
+	First name: <br>
+	<input type="text" name="first name"> <br>
+   Last name:<br>
+   <input type="text" name="Last name"><br><br>
+   <input type="submit" value="submit">
+
+   </fieldset>
+</form>
+<form>
+	<input type="radio" name="gender" value="male" checked>Male<br>         <!-- radio Makes MCQS of given value-->
+	<input type="radio" name="gender" value="female">female<br>
+	<input type="radio" name="gender" value="gender">gender<br>
+</form>
+
+<form>
+
+	<!--Makes a drop down list-->
+	<select>
+
+		<!--Group options under a specified label-->
+		<optgroup label="Hobbies">
+
+	<!--introduces list options-->                                            
+		   <option value="books">books</option>            
+		   <option value="videos">videos</option>
+        
+		</optgroup>
+
+        <optgroup label="Interests">
+		   <option value="articles">article</option>
+		   <option value="literature">literature</option>
+	    </optgroup>
+	</select>
+</form>
+</body>
+</body>
+</html>
